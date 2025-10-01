@@ -19,9 +19,9 @@ function changeColor() {
 
 // ===== Slideshow =====
 let slides = [
-  {src: "images/river.jpg", alt: "River"},
-  {src: "images/louvre_museum2.jpeg", alt: "Louvre Museum"},
-  {src: "images/eiffel_tower_at_night.jpeg", alt: "Eiffel Tower at night"}
+  {src: "river.jpg", alt: "River"},
+  {src: "louvre_museum2.jpeg", alt: "Louvre Museum"},
+  {src: "eiffel_tower_at_night.jpeg", alt: "Eiffel Tower at night"}
 ];
 let index = 0;
 
@@ -189,3 +189,4 @@ async function getWeather() {
 }
 
 getWeather();
+
