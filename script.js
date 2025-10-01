@@ -1,4 +1,4 @@
-// ===== HOME PAGE =====
+// HOME PAGE
 
 // Welcome Message with Date/Time
 function showWelcome() {
@@ -17,7 +17,7 @@ function changeColor() {
   document.body.style.backgroundColor = colors[random];
 }
 
-// ===== Slideshow =====
+//  Slideshow 
 let slides = [
   {src: "river.jpg", alt: "River"},
   {src: "louvre_museum2.jpeg", alt: "Louvre Museum"},
@@ -46,7 +46,7 @@ function prevSlide() {
 // Initialize first slide
 showSlide();
 
-// ===== ABOUT PAGE =====
+//  ABOUT PAGE 
 let destination = {
   name: "Paris",
   history: [
@@ -105,7 +105,7 @@ if (document.getElementById("fact")) {
   document.getElementById("fact").innerText = "Fun Fact: " + facts[random];
 }
 
-// ===== GALLERY PAGE =====
+// GALLERY PAGE
 let galleryFigures = document.querySelectorAll("#gallery figure");
 let lightbox = document.getElementById("lightbox");
 let big = document.getElementById("big");
@@ -115,7 +115,7 @@ let prevBtn = document.getElementById("prevBtn");
 let nextBtn = document.getElementById("nextBtn");
 let currentIndex = 0;
 
-// Open Lightbox on Click
+// Open Lightbox 
 if (galleryFigures.length > 0) {
   galleryFigures.forEach((figure, index) => {
     let img = figure.querySelector("img");
@@ -126,7 +126,7 @@ if (galleryFigures.length > 0) {
   });
 }
 
-// Show Selected Image + Caption
+// Show selected image and Caption
 function showLightbox(index) {
   let figure = galleryFigures[index];
   let img = figure.querySelector("img");
@@ -167,7 +167,7 @@ function filterGallery(category) {
   });
 }
 
-// ===== WEATHER API =====
+// WEATHER API 
 const apiKey = "fee4a525cef8dd0de6e0f334f111e8a0"; 
 const city = "Paris";         
 
@@ -189,4 +189,5 @@ async function getWeather() {
 }
 
 getWeather();
+
 
