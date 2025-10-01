@@ -109,10 +109,14 @@ blockquote {
 }
 
 /* Gallery Filter Buttons */
+/* Center gallery filter buttons */
 .filter-buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  flex-wrap: wrap;          /* wrap if screen is small */
   margin-bottom: 20px;
 }
+
 .filter-buttons button {
   background: #2d3142;
   color: #d4af37;
@@ -206,6 +210,38 @@ blockquote {
   margin: 5px 0;
   font-size: 16px;
 }
+/* Slideshow container */
+.slideshow {
+  display: flex;
+  flex-direction: column; /* image on top, buttons below */
+  align-items: center;    /* center everything horizontally */
+  margin: 20px auto;
+}
+
+/* Slideshow image */
+.slideshow img {
+  width: 400px;    /* fixed width */
+  height: 300px;   /* fixed height */
+  object-fit: cover; /* maintains aspect ratio and fills box */
+  border-radius: 8px;
+}
+
+/* Buttons below slideshow */
+.slideshow button {
+  margin: 10px 5px;
+  padding: 8px 15px;
+  background: #2d3142;
+  color: #d4af37;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slideshow button:hover {
+  background: #ffd700;
+  color: #000;
+}
+
 
 
 /* Responsive */
