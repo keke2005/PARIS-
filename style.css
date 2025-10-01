@@ -112,8 +112,8 @@ blockquote {
 /* Center gallery filter buttons */
 .filter-buttons {
   display: flex;
-  justify-content: center;  /* center horizontally */
-  flex-wrap: wrap;          /* wrap if screen is small */
+  justify-content: center;  
+  flex-wrap: wrap;         
   margin-bottom: 20px;
 }
 
@@ -143,16 +143,16 @@ blockquote {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-  justify-content: center;   /* keeps items centered */
+  justify-content: center; 
   align-items: start;
   text-align: center;
 }
 
-/* Each Figure (Image + Caption Block) */
+/* Each Figure (Image and Caption Block) */
 #gallery figure {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* centers image + caption */
+  align-items: center;   
   margin: 0;
 }
 
@@ -213,16 +213,16 @@ blockquote {
 /* Slideshow container */
 .slideshow {
   display: flex;
-  flex-direction: column; /* image on top, buttons below */
-  align-items: center;    /* center everything horizontally */
+  flex-direction: column; 
+  align-items: center;    
   margin: 20px auto;
 }
 
 /* Slideshow image */
 .slideshow img {
-  width: 400px;    /* fixed width */
-  height: 300px;   /* fixed height */
-  object-fit: cover; /* maintains aspect ratio and fills box */
+  width: 400px;    
+  height: 300px; 
+  object-fit: cover; 
   border-radius: 8px;
 }
 
@@ -249,4 +249,5 @@ blockquote {
   nav ul { flex-direction: column; }
   .float-img { float: none; display: block; margin: 10px auto; }
 }
+
 
